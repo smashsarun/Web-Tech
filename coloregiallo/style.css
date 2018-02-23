@@ -1,0 +1,443 @@
+
+/*
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+*/
+
+body {
+	font-family: 'Abel', sans-serif;
+}
+
+h1, h2, h3 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p, ul, ol {
+
+	line-height: 180%;
+}
+
+ul, ol {
+
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkblue;
+}
+
+#wrapper {
+}
+
+.container {
+
+}
+
+/* Header */
+
+#header-wrapper {
+	overflow: hidden;
+	background-image: url(images/img01.jpg);
+
+}
+
+#header {
+	overflow: hidden;
+
+
+}
+
+/* Logo */
+
+#logo {
+	font-size: 1.4em;
+	float: left;
+	padding-left: 18%;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	line-height: 120px;
+	letter-spacing: -2px;
+
+}
+
+#logo h1 a {
+
+}
+
+#logo p {
+
+	letter-spacing: -1px;
+
+}
+
+#logo p a {
+
+}
+
+#logo a {
+
+}
+
+/* Splash */
+
+#splash {
+
+}
+
+/* Search */
+
+#search {
+
+}
+
+#search form {
+
+}
+
+#search fieldset {
+
+}
+
+#search-text {
+
+}
+
+#search-submit {
+
+}
+
+/* Menu */
+
+#menu {
+
+}
+
+#menu ul {
+	list-style: none;
+	line-height: normal;
+	margin: opx;
+	margin-top: 4.5%;
+	padding: opx;
+	display: flex;
+	justify-content: center;
+}
+
+#menu li {
+
+}
+
+#menu a {
+	display: block;
+	margin-right: 1px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #12212F;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	color: darkblue;
+}
+
+#menu .current_page_item a {
+
+}
+
+/* Page */
+
+#page {
+	padding-left: 18%;
+	padding-right: 18%;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width:60%
+
+}
+
+.post {
+	overflow: hidden;
+	clear: both;
+
+}
+
+.post .title {
+
+	letter-spacing: -1px;
+}
+
+.post .title a {
+
+}
+
+.post .meta {
+
+}
+
+.post .meta .date {
+
+}
+
+.post .meta .posted {
+
+}
+
+.post .meta a {
+}
+
+.post .entry {
+
+}
+
+.links {
+
+}
+
+.more {
+
+}
+
+.comments {
+
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+}
+
+#sidebar ul {
+
+}
+
+#sidebar li {
+
+}
+
+#sidebar li ul {
+	text-decoration-line: underline;
+}
+
+#sidebar li li {
+	line-height: 40px;
+
+}
+
+#sidebar li li span {
+
+}
+
+#sidebar li li a {
+
+	background: url(images/img04.jpg) no-repeat left 50%;
+}
+
+#sidebar h2 {	
+
+	letter-spacing: -.5px;
+
+}
+
+#sidebar p {
+
+}
+
+#sidebar a {
+
+}
+
+#sidebar a:hover {
+
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+
+}
+
+#calendar table {
+
+}
+
+#calendar tbody td {
+
+}
+
+#calendar #next {
+
+}
+
+/* Three Column Footer Content */
+
+#footer-content-wrapper {
+
+}
+
+#footer-content {
+	overflow: hidden;
+	padding-left: 18%;
+	padding-right: 18%;
+	background-color: #001a33;
+
+}
+
+#footer-content h2 {
+	color: white;
+}
+
+#footer-content a {
+	color: white;
+}
+
+#footer-bg {
+
+}
+
+#footer-content h2 {
+
+}
+
+#footer-content #fbox1 {
+	width: 33.33%;
+	float: left;
+}
+
+#footer-content #fbox2 {
+	width: 33.33%;
+	float: left;
+}
+
+#footer-content #fbox3 {
+	width: 33.33%;
+	float: left;
+}
+
+#footer-content a {
+}
+
+#column1 {
+	float: left;
+	width: 33.33%;
+}
+
+#column2 {
+	float: left;
+	width: 33.33%;
+}
+
+#column3 {
+	float: left;
+	width: 33.33%;
+
+}
+
+/* Footer */
+
+#footer {
+	text-align: center;
+}
+
+#footer p {
+
+}
+
+#footer a {
+
+}
+
+#banner {
+
+}
+
+#banner .content {
+	text-align: center;
+}
+
+.list-style1 {
+
+}
+
+.list-style1 a {
+
+}
+
+/** LIST STYLE 1 */
+
+ul.style1 {
+	list-style: none;
+}
+
+ul.style1 li {
+	line-height: 160%;
+}
+
+ul.style1 a {
+
+}
+
+ul.style1 a:hover {
+
+}
+
+ul.style1 .first {
+}
+
+#featured-content {
+	overflow: hidden;
+	padding-left: 18%;
+	padding-right: 18%;
+}
+
+#featured-content h2 {
+
+}
+
+#featured-content #column1 {
+
+}
+
+#featured-content #column2 {
+
+}
+
+#featured-content #column3 {
+
+}
+
+.button a {
+	color: white;
+}

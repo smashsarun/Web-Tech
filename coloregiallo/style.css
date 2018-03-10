@@ -144,7 +144,7 @@ a:hover {
 }
 
 #menu li {
-
+	
 }
 
 #menu a {
@@ -162,7 +162,10 @@ a:hover {
 }
 
 #menu a:hover, #menu .current_page_item a {
-	color: darkblue;
+	color: white;
+	background: black;
+	border-radius: 3px;
+	margin-right: 2px;
 }
 
 #menu .current_page_item a {
@@ -233,11 +236,14 @@ a:hover {
 /* Sidebar */
 
 #sidebar {
-	float: left;
+	float: right;
+	width: 270px;
+	margin-right: 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 #sidebar ul {
-
+	list-style: none;
 }
 
 #sidebar li {

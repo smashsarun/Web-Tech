@@ -1,0 +1,64 @@
+<body>
+
+<h1>“Pimp My Shoes” Contest Entry Form</h1>
+
+<p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+<p>Contest Entry Information</p>
+
+<form action="http://www.learningwebdesign.com/contest.php" method="POST">
+<ul>
+Name:<input type="text" name="username"><br>
+Email:<input type="email" name="emailaddress"><br>
+phone:<input type="tel" name="telephone"><br>
+
+<br>
+<p>My shoes are SO old…</p>
+<textarea name="story" rows="10" cols="50" placeholder="No more than 300 characters long"></textarea>
+</ul>
+<h2>Design your custom Forcefields:</h2>
+
+<p>Custom Shoe Design</p>
+
+<p>Color <em>(choose one)</em>:</p>
+  <ul>
+  <input type="radio" name="color">Red
+  <br>
+  <input type="radio" name="color">Blue
+  <br>
+  <input type="radio" name="color">Black
+  <br>
+  <input type="radio" name="color">Silver
+  <br>
+  </ul>
+
+<p>Features <em>(Choose as many as you want)</em></p>
+  <ul>
+  <input type="checkbox" name="features[]">Sparkley laces<br>
+  <input type="checkbox" name="features[]" checked>Metallic logo<br>
+  <input type="checkbox" name="features[]">Light-up heels<br>
+  <input type="checkbox" name="features[]">MP3-enabled<br>
+  </ul>
+
+<p>Size</p>
+<p>Sizes reflect standard men's sizes:
+<select name="size">
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+</select>
+</p>
+
+<input type="submit" value="Pimp My Shoes!">
+<input type="reset" value="Reset">
+
+
+</form>
+
+</body>

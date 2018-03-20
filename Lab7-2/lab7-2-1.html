@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy ID</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form>
+		<h1>สมัคร Easy ID เล่นได้ทันที</h1>
+		<sup>*</sup> <span>Visa ID</span> 
+		<input type="text" name="visa id" pattern="[a-z0-9]{6,}" required autofocus="">
+		<br>
+		<sup>*</sup> <span>Password</span>
+		<input type="password" name="password" pattern="[a-zA-Z0-9]{6,10}" required>
+		<br>
+		<sup>*</sup> <span>Retype Password</span>
+		<input type="password" name="retype password" pattern="[0-9A-Za-z]{6,10}" required>
+		<br>
+		<sup>*</sup> <span>เพศ</span>
+		<input type="radio" name="gender" value="male" required>
+		<span>ชาย</span>
+		<input type="radio" name="gender" value="female" required>
+		<span>หญิง</span>
+		<br>
+		<span>โทรศัพท์</span>
+		<input type="tel" name="tel" required>
+		<br>
+		<span>อีเมลล์</span>
+		<input type="email" name="email" required>
+		<br>
+		<span>ข้อตกลง</span>
+		<input type="checkbox" name="ข้อตกลง" required=>
+		<span>ยอมรับเงื่อนไข</span>
+		<br>
+		<input type="submit" name="submit">		
+	</form>
+</body>
+</html>

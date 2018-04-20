@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+	cart = {itemID:"", itemName:"", itemPrice:"", itemAmount:"", totalPrice:""};
+	function shop() {
+		cart.itemId = document.getElementById('recID').value;
+		document.getElementById('ShowId').innerHTML = cart.itemId;
+
+		cart.itemName = document.getElementById('recName').value;
+		document.getElementById('ShowName').innerHTML = cart.itemName;
+
+		cart.itemPrice = document.getElementById('recPrice').value;
+		document.getElementById('ShowPrice').innerHTML = cart.itemPrice;
+
+		cart.itemAmount = document.getElementById('recAmount').value;
+		document.getElementById('ShowAmount').innerHTML = cart.itemAmount;
+
+		cart.totalPrice = document.getElementById('ShowtotalPrice').value;
+		document.getElementById('ShowtotalPrice').innerHTML = cart.itemPrice*cart.itemAmount;
+	}
+
+	function remove(){
+		cart.itemId=""; //assign empty string to cart.itemID
+		document.getElementById('ShowId').innerHTML = cart.itemId;
+
+		cart.itemName=""; 
+		document.getElementById('ShowName').innerHTML = cart.itemName;
+
+		cart.itemPrice=""; 
+		document.getElementById('ShowPrice').innerHTML = cart.itemPrice;
+
+		cart.itemAmount=""; 
+		document.getElementById('ShowAmount').innerHTML = cart.itemAmount;
+
+		cart.itemAmount=""; 
+		document.getElementById('ShowtotalPrice').innerHTML = cart.itemAmount;
+	}
+
+	</script>
+</head>
+<body>
+
+<h1>Shopping Mall form</h1>
+<h3>Input item</h3>
+
+<span>Item ID :</span><input type="text" id="recID"> <br>
+<span>Item Name :</span><input type="text" id="recName"> <br>
+<span>Item Price :</span><input type="text" id="recPrice"> <br>
+<span>Item Amount :</span><input type="text" id="recAmount"> <br>
+
+<button onclick="shop()">shop</button>
+
+<h3>Item in cart</h3>
+<span>Item Id: </span><span id="ShowId"></span><br>
+<span>Item Name: </span><span id="ShowName"></span><br>
+<span>Item Price: </span><span id="ShowPrice"></span><br>
+<span>Item Amount: </span><span id="ShowAmount"></span><br>
+<span>total Price </span><span id="ShowtotalPrice"></span><br>
+
+<button onclick="remove()">remove</button>
+
+</body>
+</html>

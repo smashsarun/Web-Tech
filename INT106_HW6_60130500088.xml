@@ -1,0 +1,44 @@
+<Deposit_Passbook>
+
+	<Page>
+		<Type>Information</Type>
+		<Bank>Tisco Bank</Bank>
+		<Name>Sarun Sumetpanich</Name>
+		<AccountNo.>644616955</AccountNo.>
+		<Branch>Central Plaza Rama II</Branch>		
+	</Page>
+	<Page>
+		<Type>Transaction</Type>
+		<Transaction>
+			<Date>05/01/18</Date>
+			<TC>Deposit</TC>
+			<amount>+1450.00</amount>
+			<Balance>1450.00</Balance>
+		</Transaction>
+		<Transaction>
+			<Date>06/01/18</Date>
+			<TC>Deposit</TC>
+			<amount>+100.00</amount>
+			<Balance>1350.00</Balance>
+		</Transaction>
+		<Transaction>
+			<Date>07/02/18</Date>
+			<TC>Withdrawal</TC>
+			<amount>-500.00</amount>
+			<Balance>850.00</Balance>
+		</Transaction>
+		<Transaction>
+			<Date>01/03/18</Date>
+			<TC>Interest</TC>
+			<amount>+1.41</amount>
+			<Balance>851.41</Balance>
+		</Transaction>
+		<Transaction>
+			<Date>05/03/18</Date>
+			<TC>Deposit</TC>
+			<amount>+100.00</amount>
+			<Balance>951.41</Balance>
+		</Transaction>
+	</Page>
+
+</Deposit_Passbook>

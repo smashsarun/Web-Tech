@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>591300500xxx</title>
+	<title>60130500088</title>
 	<style type="text/css">
 	button{
 		font-size: 2em;
@@ -71,6 +71,72 @@
 	slotC3 = [];
 	
 
+
+	function spin(times) {
+		var random1 = Math.floor(Math.random()*3);
+		var random2 = Math.floor(Math.random()*3);
+		var random3 = Math.floor(Math.random()*3);
+		if (times == 1) {
+			slotC1[0] = random1;
+			document.getElementById("s11").innerHTML = random1;
+			slotC1[1] = random2;
+			document.getElementById("s12").innerHTML = random2;
+			slotC1[2] = random3;
+			document.getElementById("s13").innerHTML = random3;
+			}
+		else if (times == 2){
+			slotC2[0] = random1;
+			document.getElementById("s21").innerHTML = random1;
+			slotC2[1] = random2;
+			document.getElementById("s22").innerHTML = random2;
+			slotC2[2] = random3;
+			document.getElementById("s23").innerHTML = random3;
+		}
+		else if (times == 3) {
+			slotC3[0] = random1;
+			document.getElementById("s31").innerHTML = random1;
+			slotC3[1] = random2;
+			document.getElementById("s32").innerHTML = random2;
+			slotC3[2] = random3;
+			document.getElementById("s33").innerHTML = random3;
+
+			if ( slotC1[0]===slotC2[0]===slotC3[0] ){
+				document.getElementById("result").innerHTML = "WIN";
+				winscore++;
+				document.getElementById("winPoint").innerHTML = winscore;
+			}
+			else if( slotC1[1]===slotC2[1]===slotC3[1] ){
+				document.getElementById("result").innerHTML = "WIN";
+				winscore++;
+				document.getElementById("winPoint").innerHTML = winscore;
+			}
+			else if( slotC1[2]===slotC2[2]===slotC3[2] ){
+				document.getElementById("result").innerHTML = "WIN";
+				winscore++;
+				document.getElementById("winPoint").innerHTML = winscore;
+			}
+			else {
+				document.getElementById("result").innerHTML = "LOSE";
+				losescore++;
+				document.getElementById("losePoint").innerHTML = losescore;
+			}
+
+		}		
+	}
+
+	function reMatch(){
+			document.getElementById("s11").innerHTML = "";
+			document.getElementById("s12").innerHTML = "";
+			document.getElementById("s13").innerHTML = "";
+			document.getElementById("s21").innerHTML = "";
+			document.getElementById("s22").innerHTML = "";
+			document.getElementById("s23").innerHTML = "";
+			document.getElementById("s31").innerHTML = "";
+			document.getElementById("s32").innerHTML = "";
+			document.getElementById("s33").innerHTML = "";
+
+			document.getElementById("result").innerHTML = "";
+		}
 	/*Hint Math.random() return number between 0 and 1
 			Math.floor(x) Returns x, rounded downwards to the nearest integer
 			Math.ceil(x) 	Returns x, rounded upwards to the nearest integer.*/

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>591300500xxx</title>
+	<title>60130500088</title>
 	<style type="text/css">
 	button{
 		font-size: 2em;
@@ -25,8 +25,8 @@
 			<td colspan="3" id="com">Bingo Book</td>
 		</tr>
 		<tr >
-			<td id="num1" ></td>
-			<td id="num2" ></td>
+			<td id="num1"></td>
+			<td id="num2"></td>
 			<td id="num3"></td>
 		</tr>
 	</table>
@@ -56,7 +56,102 @@
 	book = [];
 	numCollection = [];
 	
-	
+	function newGame(){
+		book[0] = Math.floor(Math.random()*10);
+		book[1] = Math.floor(Math.random()*10);
+		while(book[1] == book[0]){
+			book[1] = Math.floor(Math.random()*10);
+		}
+		book[2] = Math.floor(Math.random()*10);
+		while(book[2] == book[1] || book[2] == book[3]){
+			book[2] = Math.floor(Math.random()*10);
+		}
+		document.getElementById("num1").innerHTML = book[0];
+		document.getElementById("num2").innerHTML = book[1];
+		document.getElementById("num3").innerHTML = book[2];
+
+		document.getElementById("res1").innerHTML = "";
+		document.getElementById("res2").innerHTML = "";
+		document.getElementById("res3").innerHTML = "";
+		document.getElementById("res4").innerHTML = "";
+		document.getElementById("res5").innerHTML = "";
+		document.getElementById("res6").innerHTML = "";
+		document.getElementById("res7").innerHTML = "";
+		document.getElementById("res8").innerHTML = "";
+		document.getElementById("res9").innerHTML = "";
+		document.getElementById("res10").innerHTML = "";
+	}
+
+
+	function random(){
+		
+		for (var i = 0; i < 10; i++) {
+			numCollection[i] = Math.floor(Math.random()*10);
+		}
+		document.getElementById("res1").innerHTML = numCollection[0];
+		document.getElementById("res2").innerHTML = numCollection[1];
+		document.getElementById("res3").innerHTML = numCollection[2];
+		document.getElementById("res4").innerHTML = numCollection[3];
+		document.getElementById("res5").innerHTML = numCollection[4];
+		document.getElementById("res6").innerHTML = numCollection[5];
+		document.getElementById("res7").innerHTML = numCollection[6];
+		document.getElementById("res8").innerHTML = numCollection[7];
+		document.getElementById("res9").innerHTML = numCollection[8];
+		document.getElementById("res10").innerHTML = numCollection[9];
+
+		var value = "false";
+		for (var i = 0; i < 3; i++) {
+			if (book[i] === numCollection[0]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[1]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[2]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[3]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[4]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[5]) {
+				value = "true";
+			}
+			else if (book[i] === numCollection[6]) {
+				value = "true";
+			}
+			else {
+				value = "false";
+				break;
+			}
+		}
+		for (var i = 0; i < 3; i++) {
+			if (book[i] === numCollection[7]) {
+				value = "false";
+				break;
+			}
+			else if (book[i] === numCollection[8]) {
+				value = "false";
+				break;
+			}
+			else if (book[i] === numCollection[9]) {
+				value = "false";
+				break;
+			}
+		}
+
+		if (value == "true") {
+			document.getElementById("winBlock").innerHTML = "You Win!";
+		}
+		else {
+			document.getElementById("winBlock").innerHTML = "You Lose";
+		}
+
+
+	}
+
 	
 	/*Hint Math.random() return number between 0 and 1
 			Math.floor(x) Returns x, rounded downwards to the nearest integer

@@ -308,3 +308,49 @@ body {
 	color: #ff3300;
 	text-decoration-line: none;
 }
+
+.icon-contact {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+#phoneicon {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	width: 60%;
+}
+
+#emailicon {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	width: 67%;
+}
+
+.text-contact{
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+#phone{
+
+}
+
+#email {
+	margin-left: 10%;
+}
+
+#email h2{
+	margin-left: 35px;
+}
+
+.form{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#formsection {
+	margin-left: 30%;
+}

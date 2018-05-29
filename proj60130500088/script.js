@@ -68,3 +68,8 @@ function addto(){
 	num++;
 	document.getElementById("numofshop").innerHTML = num;
 }
+
+function success(){
+    alert("เราได้รับข้อมูลของคุณแล้ว เราจะติดต่อกลับให้เร็วที่สุด ขอบคุณครับ");
+}
+

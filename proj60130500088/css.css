@@ -265,6 +265,27 @@ body {
 	color: orange;
 }
 
+#addto {
+	border-radius: 5px;
+	background-color: #ff6600;
+	color: white;
+	border-style: none;
+}
+
+#addto:hover {
+	border-radius: 5px;
+	background-color: #ff3300;
+	color: white;
+	border-style: none;
+}
+
+#addto:active {
+	border-radius: 5px;
+	background-color: #cc2900;
+	color: white;
+	border-style: none;
+}
+
 /*page3*/
 
 #titlelo {
